@@ -1,0 +1,17 @@
+{
+  "name": "section3",
+  "version": "1.0.0",
+  "description": "* 타입은 값들을 포함하는 집합이다.  * 타입 호환성: 어떤 타입을 다른 타입으로 취급해도 괜찮은지 판단하는 것   * number literal type $\\in$ number type   * 정사각형을 직사각형으로 말해도 되는데, 직사각형을 정사각형으로 말할 수는 없다.    * code 예시     ```ts     let num1: number = 10;     let num2: 10 = 10;     num1 = num2;     num2 = num1;  // 이건 안됨.     ``` * 업 캐스트: 서브타입을 슈퍼타입으로 취급   * 모든 상황에 허용 * 다운 캐스트: 슈퍼타입을 서브타입으로 취급    * 거의 모든 상황에 허용되지 않음.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.4.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
