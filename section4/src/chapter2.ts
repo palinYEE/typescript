@@ -50,3 +50,11 @@ dogDunc = animalFunc;
 
 
 //  2-2. 매개변수 개수가 다를 때
+type Func1 = (a: number, b: number) => void;
+type Func2 = (a: number) => void;
+
+let func1: Func1 = (a, b) => {};
+let func2: Func2 = (a) => {};
+
+func1 = func2;
+// func2 = func1;
