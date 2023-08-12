@@ -36,4 +36,3 @@ const lib: Lib ={
   b: 2,
   c: "hello"
 };
-
