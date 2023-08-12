@@ -27,7 +27,7 @@ interface Post {
   title: string;
   content: string;
 }
-function fetchPost() {
+function fetchPost(): Promise<Post> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve({
@@ -38,3 +38,8 @@ function fetchPost() {
     }, 3000);
   })
 }
+
+const postRequest = fetchPost();
+postRequest.then((post) => {
+  post.id
+})
